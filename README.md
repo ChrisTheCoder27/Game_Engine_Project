@@ -1,5 +1,8 @@
-# Team Members
-Christopher Dupas - Will work on everything for this project (100%)
+# Group Formation
+Christopher Dupas - Will work on everything required for this project, including the singleton, command, and factory design pattern, as well as the scenario creation and video report (100%) <br>
+I initially tried to form a group with two people who are also in my GDW team, but they already had a third member. So I asked if I could join as a fourth member, however even though they all agreed to it they couldn’t come up with a reason for having four people in the group. I was okay with this decision because they said they weren’t connecting this project with our GDW game, which I was planning on doing, so I’m working on this project by myself. <br>
+Gantt Chart
+<img width="1620" height="574" alt="image" src="https://github.com/user-attachments/assets/3e27433a-83bd-43a3-aa79-8df3e96c04c2" />
 # Game Project Description
 This scenario has the player exploring a forest where they're collecting resources to bring back to their cabin to protect themselves against monsters when night falls. The player can walk, sprint, jump, crouch, pick up items, and interact with certain objects. They can pick up resources like firewood, planks, and tools to use in their cabin. There is no combat, so the player has to either run or hide from the monsters. The player has to go through a single day and survive until morning without getting caught by the monsters.
 # Singleton
