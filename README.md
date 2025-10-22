@@ -5,7 +5,7 @@ I initially tried to form a group with two people who are also in my GDW team, b
 <img width="1620" height="574" alt="image" src="https://github.com/user-attachments/assets/3e27433a-83bd-43a3-aa79-8df3e96c04c2" />
 
 # Game Project Description
-This scenario has the player exploring a forest where they're collecting resources to bring back to their cabin to protect themselves against monsters when night falls. The player can walk, sprint, jump, crouch, pick up items, and interact with certain objects. They also have a flashlight that they can toggle on and off. They can pick up resources like firewood, planks, and food to use in their cabin. There is no combat, so the player has to either run or hide from the monsters. The player has to go through a single day and survive until morning without getting caught by the monsters.
+This scenario has the player exploring a forest where they're collecting resources to bring back to their cabin to protect themselves against monsters when night falls. The player can walk, sprint, jump, crouch, pick up items, and interact with certain objects. They also have a flashlight that they can toggle on and off. They can pick up resources like firewood, planks, and food to use in their cabin. There is no combat, so the player has to either run or hide from the monsters. The player has to go through a single day and survive until morning without getting caught by the monsters. The game can be quit at any time by pressing the escape key.
 <img width="1765" height="768" alt="Game Engine Project Scenario" src="https://github.com/user-attachments/assets/6321f3b7-6e5c-44da-a9f1-bf6899e7d25f" />
 
 # Singleton
