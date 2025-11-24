@@ -13,6 +13,7 @@ The first improvement made was to the singleton design pattern and the player's 
 
 
 # Observer
-
+I implemented an observer pattern by having the subject, UIGameInstance, send a notification to all observers when the player runs out of stamina. This is done by getting all actors with the interface BPI_Observer and performing a for loop to call the notify function for each observer. The observer interface, BPI_Observer, creates a notify function that is overwritten for each observer to perform the specific action that it needs to take when something has changed, which is the player's stamina reaching 0. The first observer is the player, which sets the "IsSprinting" bool variable to false and the "IsTired" bool variable to true, forcing the player to stop sprinting and prevents them from sprinting for a few seconds. The other observer is BP_AudioObserver, which simply plays a creepy breathing sound when notified. These observers add to my project since it's a horror game and the player being unable to sprint for a short time after running out of stamina causes them to panic, especially if they're being chased by an enemy. Combining this with the creepy sound effect that is played, it helps add to my project's intended atmosphere by making the player feel uncomfortable and scared.
+<img width="737" height="1124" alt="image" src="https://github.com/user-attachments/assets/f6bd8406-ebf4-41ed-bf40-d946454cfcc4" />
 
 # State
