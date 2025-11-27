@@ -28,7 +28,8 @@ I implemented a state pattern for the enemy in my project, BP_NavEnemy, who has 
 <img width="750" height="900" alt="image" src="https://github.com/user-attachments/assets/559331f2-55bc-41af-bb05-f3a6aad42efa" />
 
 # Performance Profiling
+For the performance without optimization, I disconnected any nodes that marked the flag as dirty or clean and I removed the branch statement in the player event tick that checked if the flag was dirty. This was done so the optimization pattern I implemented wasn't affecting the game's performance. For the performance with optimization, I reverted it so the flag would be marked as dirty or clean where it needed to be, ensuring the event tick was only enabled when a change needed to be made to the player's stamina. <br>
 Trace without optimization pattern.
-<img width="1915" height="1129" alt="image" src="https://github.com/user-attachments/assets/e2a4f3a2-d152-4959-ae06-0f7128eae82c" />
+<img width="1917" height="1128" alt="image" src="https://github.com/user-attachments/assets/494831a2-2b3c-4f37-8241-dc52250f1871" />
 Trace with optimization pattern (dirty flag).
-<img width="1922" height="1130" alt="image" src="https://github.com/user-attachments/assets/1d2e5a1a-fcd2-47fc-8c48-1ae30edc4ebd" />
+<img width="1910" height="1131" alt="image" src="https://github.com/user-attachments/assets/32f669f2-a2a2-414c-a3bb-de80e9d4ebad" />
