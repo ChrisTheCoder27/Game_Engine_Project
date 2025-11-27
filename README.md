@@ -1,5 +1,8 @@
 # Contributions
 Christopher Dupas (100%) - I worked on everything for this assignment since I'm doing it alone. This includes all of the improvements made to the previous assignment's deliverables, the dirty flag optimization pattern, the observer and state patterns, performance profiling, and the video report.
+## Third-party Assets
+Breathing sound used for observer pattern found on Freesound (by newlocknew): https://freesound.org/people/newlocknew/sounds/581840/ <br>
+Unreal Insights used for performance profiling: https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-insights-in-unreal-engine?application_version=5.3 
 
 # Game Project Description
 This scenario has the player exploring a forest where they're collecting resources to bring back to their cabin to protect themselves against monsters when night falls. The player can walk, sprint, jump, crouch, pick up items, and interact with certain objects. They also have a flashlight that they can toggle on and off. They can pick up resources like firewood, planks, and food to use in their cabin. If the player picks up a fruit, they can press the use key to eat it and restore some health. There is no combat, so the player has to either run or hide from the monsters. The player has to go through a single day and survive until morning without getting caught by the monsters. The game can be quit at any time by pressing the escape key.
@@ -23,3 +26,9 @@ I implemented an observer pattern by having the subject, UIGameInstance, send a 
 # State
 I implemented a state pattern for the enemy in my project, BP_NavEnemy, who has 2 states, patrolling and chasing. I used an enumeration and created 2 enumerators for each state of this enemy. The enemy will start off in their patrolling state, where they move between a set of waypoints in the level that are stored in the variable "Waypoints", which is an array of actors. The current waypoint is tracked using the variable "Waypoint Index". When the enemy reaches its current waypoint, it will get the next waypoint and move towards it, and once they reach the last waypoint the index will be set to 0 and they'll move to the first waypoint again. Using the "On See Pawn" event from the pawn sensing component, when the enemy spots the player they will enter the chasing state and follow the player. The enemy will also enter the chasing state if they stop colliding with the player. If the enemy loses sight of the player for too long, they will return to the patrolling state, otherwise they will keep chasing them. This state pattern makes the enemy in my game feel much more alive since they now move around instead of staying still, and switching between patrolling the area and chasing the player makes them dynamic. It also presents a threat to the player since they now have to stay out of the enemy's vision and run away if they get caught.
 <img width="750" height="900" alt="image" src="https://github.com/user-attachments/assets/559331f2-55bc-41af-bb05-f3a6aad42efa" />
+
+# Performance Profiling
+Trace without optimization pattern.
+<img width="1915" height="1129" alt="image" src="https://github.com/user-attachments/assets/e2a4f3a2-d152-4959-ae06-0f7128eae82c" />
+Trace with optimization pattern (dirty flag).
+<img width="1922" height="1130" alt="image" src="https://github.com/user-attachments/assets/1d2e5a1a-fcd2-47fc-8c48-1ae30edc4ebd" />
